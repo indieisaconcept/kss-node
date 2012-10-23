@@ -8,13 +8,8 @@ var optimist = require('optimist'),
 
     kss = require(__dirname + '/../lib/kss.js'),
 
-	options = {
-		templateDirectory: __dirname + '/../lib/template',
-		sourceDirectory: __dirname + '/../demo',
-		destinationDirectory: process.cwd() + '/styleguide'
-	},
-
 	KSS_FAILED = false,
+    options = {},
     argv;
 
 /**
